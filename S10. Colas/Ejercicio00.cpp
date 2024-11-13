@@ -105,6 +105,3 @@ void eliminarCola(Nodo *&frente){
     }
     delete aux;
 }
-
-
-
