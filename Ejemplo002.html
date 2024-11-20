@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript">
+        let n1=parseInt(prompt("Ingrese num1"));
+        let n2=parseInt(prompt("Ingrese num2"));
+        //validar o acomodar para que el menor siempre este primero
+        if (n1 > n2){
+            let aux=n1;
+            n1=n2;
+            n2=aux;
+        }
+        let n = n1;
+        let listaNum = [];
+        do{            
+            listaNum.push(n);
+            n++;
+        }while(n<=n2);
+        document.write("Intervalo ["+ n1 +" - " + n2 + "]: <br>" + listaNum + "<br>");
+    </script>
+</body>
+</html>
